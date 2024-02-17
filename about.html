@@ -10,16 +10,51 @@
 <body>
     <!-- Header section with logo and navigation -->
     <header>
-        <h1>Alumni-Net</h1>
         <nav id="main-nav">
-            <ul>
-                <li><a class="nav-items" href="home.html">Home</a></li>
-                <li><a class="nav-items" href="events.html">Events</a></li>
-                <li><a class="nav-items" href="#about">About</a></li>
-                <li><a class="nav-items" href="#contact">Contact</a></li>
+            <h1 class="animal-zoom"><span>ALUmni</span><span> NET</span></h1>
+            <ul class="animal-zoom">
+                <li class="nav-list-items"><a class="nav-items active" href="home.html">Home</a></li>
+                <li class="nav-list-items"><a class="nav-items" href="events.html">Events</a></li>
+                <li class="nav-list-items"><a class="nav-items" href="#about">About</a></li>
+                <li class="nav-list-items"><a class="nav-items" href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="container main relative h-100 w-100 flex items-center ">
+            <article class="detail-container absolute">
+                <h2 class="p-10 animal-zoom">Welcome to AlumniNet!</h2>
+                <div class="small-text">
+                    <p class="texts-md animal-zoom">Your official online hub for staying connected to your alma mater and fellow
+                        alumni.</p>
+                    <p class="texts-md animal-zoom">Our goal is to cultivate a lively and involved community by offering valuable
+                        resources, updates, and chances
+                        for both professional and personal development.</p>
+
+                    <button class="btn btn-home animal-zoom bg-green mt-20 pointer">
+                        <a href="about.html" class="text-white dec-none">
+                            Contact US Now <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </button>
+
+                    <button class="btn btn-home animal-zoom bg-red mt-20 pointer">
+                        <a href="events.html" class="text-white dec-none">
+                            Comming Events <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </button>
+                </div>
+            </article>
+            <div class="img-container absolute ">
+                <div class="gradient-overlay"></div>
+                <video class="icon-bg" loop autoplay muted>
+                    <source src="./video/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+        </div>
+
     </header>
+
+
 
     <!-- Main content of the page -->
     <main id="home">

@@ -1,117 +1,298 @@
 <!-- HTML for Landing page for AlumniNet a website for ALU alumni events -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport settings for responsive design -->
-    <meta name="description" content="AlumniNet is your official online hub for staying connected to your alma mater and fellow alumni."> <!-- Meta description -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the viewport settings for responsive design -->
+    <meta name="description"
+        content="AlumniNet is your official online hub for staying connected to your alma mater and fellow alumni.">
+    <!-- Meta description -->
     <title>AlumniNet - Home</title> <!-- Sets the title of the document -->
     <link rel="stylesheet" href="assets/style.css"> <!-- Links to an external stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Link to Font Awesome library -->
-    <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link to Font Awesome library -->
+
+<body>
     <!-- Header section with logo and navigation -->
     <header>
         <nav id="main-nav">
-            <h1><span>ALUmni</span><span> NET</span></h1>
-            <ul>
-                <li class="nav-list-items"><a class="nav-items" href="home.html">Home</a></li>
+            <h1 class="animal-zoom"><span>ALUmni</span><span> NET</span></h1>
+            <ul class="animal-zoom">
+                <li class="nav-list-items"><a class="nav-items active" href="home.html">Home</a></li>
                 <li class="nav-list-items"><a class="nav-items" href="events.html">Events</a></li>
                 <li class="nav-list-items"><a class="nav-items" href="#about">About</a></li>
                 <li class="nav-list-items"><a class="nav-items" href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="container main relative h-100 w-100 flex items-center">
+        <div class="container main relative h-100 w-100 flex items-center ">
             <article class="detail-container absolute">
-                <h2>Welcome to AlumniNet!</h2>
+                <h2 class="p-10 animal-zoom">Welcome to AlumniNet!</h2>
                 <div class="small-text">
-                    <p class="texts-md">Your official online hub for staying connected to your alma mater and fellow alumni.</p>
-                    <p class="texts-md">Our goal is to cultivate a lively and involved community by offering valuable resources, updates, and chances
-                     for both professional and personal development.</p>
+                    <p class="texts-md animal-zoom">Your official online hub for staying connected to your alma mater and fellow
+                        alumni.</p>
+                    <p class="texts-md animal-zoom">Our goal is to cultivate a lively and involved community by offering valuable
+                        resources, updates, and chances
+                        for both professional and personal development.</p>
+
+                    <button class="btn btn-home animal-zoom bg-green mt-20 pointer">
+                        <a href="about.html" class="text-white dec-none">
+                            Contact US Now <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </button>
+
+                    <button class="btn btn-home animal-zoom bg-red mt-20 pointer">
+                        <a href="events.html" class="text-white dec-none">
+                            Comming Events <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </button>
                 </div>
             </article>
             <div class="img-container absolute ">
                 <div class="gradient-overlay"></div>
-                <img src="https://www.salesforce.org/wp-content/uploads/2019/06/Copy-of-DSC_7221.jpg" alt="Alumni gathering image">
+                <video class="icon-bg" loop autoplay muted>
+                    <source src="./video/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
             </div>
         </div>
-        
+
     </header>
 
     <!-- Main content of the page -->
     <main id="home">
+
+        <!-- Article section with introduction and aim of the website -->
+        <article class="about-us w-90 ">
+            <h2 class="p-10 title animal-zoom">Our Services</h2>
+            <p class="animal-zoom">Discover and reconnect with fellow alumni by utilizing our directory and participating in exciting
+                events.</br>
+
+                Join our End-of-Year Alumni Regional Gatherings and rekindle those connections.
+            <p class="mt-20">&nbsp;</p>
+            <div class="flex justify-between items-center p-10 wrap ">
+                <div class="service p-3">
+                    <div class="img"><img
+                            src="https://images.squarespace-cdn.com/content/v1/5d24f1c29a964f0001ac1ac1/1562773688685-44HRDAYT3G8IK4OP9E9O/Connect.png"
+                            alt=""></div>
+                    <div class="text">
+                        <h3>Alumni Connect</h3>
+                        <small class="p-3">Find and connect with alumni Directly and events.</small>
+                    </div>
+                </div>
+                <div class="service p-3">
+                    <div class="img"><img
+                            src="https://constructionmarketingblog.org/wp-content/uploads/2023/09/How-Is-Collaboration-Different-From-Teamwork.jpg"
+                            alt=""></div>
+                    <div class="text">
+                        <h3>Regional Gatherings</h3>
+                        <small class="p-3">Attend end-of-year alumni events to network.</small>
+                    </div>
+                </div>
+                <div class="service p-3">
+                    <div class="img"><img
+                            src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg"
+                            alt=""></div>
+                    <div class="text">
+                        <h3>Events Updates</h3>
+                        <small class="p-3">Stay informed about campus news and Upcoming Events.</small>
+                    </div>
+                </div>
+                <div class="service p-3">
+                    <div class="img"><img
+                            src="https://play-lh.googleusercontent.com/8XCMNUY7CUq55fa4yRlgTVc2EcPQRT99nfxKRUjYhMoL5_IfZL8D_dcMMXbU9E76M6Vs"
+                            alt=""></div>
+                    <div class="text">
+                        <h3>Career Hub</h3>
+                        <small class="p-3">Resources, development opportunities, and jobs.</small>
+                    </div>
+                </div>
+            </div>
+        </article>
         <!----Simple Comming Events--->
         <section class="comming-events">
-            <h2>Upcoming Events</h2>
-            <p>Upcoming events and activities in the ALU community.</p>
-            <div class="flex justify-between items-center gap-20 wrap p-10">
+            <h2 class="p-10 title">Upcoming Events</h2>
+            <p class="p-10 m-auto w-50 mt-20">Embark on a thrilling journey through this week's top four events! From
+                captivating
+                performances to engaging workshops, the excitement awaits. Don't let these opportunities pass you
+                by—dive in and experience the extraordinary!</p>
+            <div class="flex justify-between items-center gap-10 wrap p-10 mt-20">
                 <div class="box">
                     <div class="img">
                         <img src="https://www.alueducation.com/wp-content/uploads/2024/02/SV-Youtube-Cover.png" alt="">
-                        <div class="text p-10">
-                            <h3>Pull Party</h3>
-                            <p>This Month At Lestho Cohort</p>
+                    </div>
+                    <div class="text p-10">
+                        <p class="clip-text">Los Angeles Tech With ALu Students Make Sure Dont Miss</p>
+                    </div>
+                    <div class="flex justify-between p-3 mt-20">
+                        <div class="date"><i class="fa fa-calendar"></i> 2.10.2024</div>
+                        <div class="acess">
+                            <a href="http://" target="_blank" class="link">Read More </a>
                         </div>
                     </div>
                 </div>
                 <div class="box">
                     <div class="img">
-                        <img src="https://www.alueducation.com/wp-content/uploads/2024/02/SV-Youtube-Cover.png" alt="">
-                        <div class="text p-10">
-                            <h3>Pull Party</h3>
-                            <p>This Month At Lestho Cohort</p>
+                        <img src="https://i.ytimg.com/vi/93nM_3SOyuw/maxresdefault.jpg" alt="">
+                    </div>
+                    <div class="text p-10">
+                        <p class="clip-text">Los Angeles Tech With ALu Students Make Sure Dont Miss</p>
+                    </div>
+                    <div class="flex justify-between p-3 mt-20">
+                        <div class="date"><i class="fa fa-calendar"></i> 2.10.2024</div>
+                        <div class="acess">
+                            <a href="http://" target="_blank" class="link">Read More </a>
                         </div>
                     </div>
                 </div>
                 <div class="box">
                     <div class="img">
-                        <img src="https://www.alueducation.com/wp-content/uploads/2024/02/SV-Youtube-Cover.png" alt="">
-                        <div class="text p-10">
-                            <h3>Pull Party</h3>
-                            <p>This Month At Lestho Cohort</p>
+                        <img src="https://i.ytimg.com/vi/iVwoi1woEtI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA3--lHcaCMWtrFasveqmGLeQO6Ow"
+                            alt="">
+                    </div>
+                    <div class="text p-10">
+                        <p class="clip-text">Los Angeles Tech With ALu Students Make Sure Dont Miss</p>
+                    </div>
+                    <div class="flex justify-between p-3 mt-20">
+                        <div class="date"><i class="fa fa-calendar"></i> 2.10.2024</div>
+                        <div class="acess">
+                            <a href="http://" target="_blank" class="link">Read More </a>
                         </div>
                     </div>
                 </div>
                 <div class="box">
                     <div class="img">
-                        <img src="https://www.alueducation.com/wp-content/uploads/2024/02/SV-Youtube-Cover.png" alt="">
-                        <div class="text p-10">
-                            <h3>Pull Party</h3>
-                            <p>This Month At Lestho Cohort</p>
+                        <img src="https://i.ytimg.com/vi/TOLFJuArfPc/sddefault.jpg?v=60e33bc5" alt="">
+                    </div>
+                    <div class="text p-10">
+                        <p class="clip-text">Los Angeles Tech With ALu Students Make Sure Dont Miss</p>
+                    </div>
+                    <div class="flex justify-between p-3 mt-20">
+                        <div class="date"><i class="fa fa-calendar"></i> 2.10.2024</div>
+                        <div class="acess">
+                            <a href="http://" target="_blank" class="link">Read More </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <center>
+                <a href="events.html" target="_blank" class="link">View All Events <i class="fa fa-arrow-right"></i></a>
+            </center>
         </section>
-        <!-- Article section with introduction and aim of the website -->
-        <article>
-            <h2>Welcome to AlumniNet!</h2>
-            <p>Your official online hub for staying connected to your alma mater and fellow alumni.</p>
-            <p>We aim to foster a vibrant and engaged community by providing valuable resources, news, and opportunities for professional and personal growth.</p>
-        </article>
+
         <section class="highlights">
             <!-- Hero section -->
-            <figure>
-                <img src="https://www.alueducation.com/wp-content/uploads/2023/03/bl-hd-im-3.jpg" alt="Alumni gathering image">
-                <figcaption>ALU students celebrating graduation</figcaption>
+            <figure class="flex  gap-10 relative flex justify-between items-center">
+                <div class="img relative w-100">
+                    <img class="img-cover" src="https://www.alueducation.com/wp-content/uploads/2023/03/bl-hd-im-3.jpg"
+                        alt="Alumni gathering image">
+                    <div class="gradient-overlay br-red"></div>
+                </div>
+
+                <figcaption class="absolute z-2 p-20  left-0">
+                    <h1 class="text-white text-xxl">ALU students celebrating graduation</h1>
+                    <span class="text-white">
+                        <p class="clip-text w-70 mt-30 ">
+                            Los Angeles Tech With ALu Students Make Sure Dont Miss
+                            Los Angeles TWith ALu Students Make Sure Dont Miss
+                            Los Angeles TWith ALu Students Make Sure Dont Miss
+                            Los Angeles TWith ALu Students Make Sure Dont Miss
+                            Los Angeles TWith ALu Students Make Sure Dont Miss
+                            Los Angeles Tech With ALu Students Make Sure Dont Miss
+                        </p>
+                    </span>
+                    <button class="btn btn-home bg-red mt-20 pointer">
+                        <a href="events.html" class="text-white dec-none">
+                            See Other Past Events <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </button>
+                </figcaption>
             </figure>
             <!-- Cards with figures and objectives of the website -->
             <div id="objectives" class="flex">
                 <figure class="objective-cards">
-                    <img class="objective-images" src="https://media.licdn.com/dms/image/D4D22AQHNxf4k3c320Q/feedshare-shrink_2048_1536/0/1700478924837?e=2147483647&v=beta&t=ZGhb6vknKn_dHoXLtt6eeF9v3ovkp6qsZMkLZiwFR6o" alt="End of year ALUmni regional gatherings">
+                    <img class="objective-images"
+                        src="https://media.licdn.com/dms/image/D4D22AQHNxf4k3c320Q/feedshare-shrink_2048_1536/0/1700478924837?e=2147483647&v=beta&t=ZGhb6vknKn_dHoXLtt6eeF9v3ovkp6qsZMkLZiwFR6o"
+                        alt="End of year ALUmni regional gatherings">
                     <h3>Reconnect</h3>
                     <p>Find and connect with fellow alumni through our directory and events.</p>
                 </figure>
                 <figure class="objective-cards">
-                    <img class="objective-images" src="https://media.licdn.com/dms/image/D4D22AQHNxf4k3c320Q/feedshare-shrink_2048_1536/0/1700478924837?e=2147483647&v=beta&t=ZGhb6vknKn_dHoXLtt6eeF9v3ovkp6qsZMkLZiwFR6o" alt="End of year ALUmni regional gatherings">
+                    <img class="objective-images"
+                        src="https://media.licdn.com/dms/image/D4D22AQHNxf4k3c320Q/feedshare-shrink_2048_1536/0/1700478924837?e=2147483647&v=beta&t=ZGhb6vknKn_dHoXLtt6eeF9v3ovkp6qsZMkLZiwFR6o"
+                        alt="End of year ALUmni regional gatherings">
                     <h3>Reengage</h3>
                     <p>Stay informed about campus news, alumni achievements, and upcoming events.</p>
                 </figure>
                 <figure class="objective-cards">
-                    <img class="objective-images" src="https://media.licdn.com/dms/image/D4D22AQHNxf4k3c320Q/feedshare-shrink_2048_1536/0/1700478924837?e=2147483647&v=beta&t=ZGhb6vknKn_dHoXLtt6eeF9v3ovkp6qsZMkLZiwFR6o" alt="End of year ALUmni regional gatherings">
+                    <img class="objective-images"
+                        src="https://media.licdn.com/dms/image/D4D22AQHNxf4k3c320Q/feedshare-shrink_2048_1536/0/1700478924837?e=2147483647&v=beta&t=ZGhb6vknKn_dHoXLtt6eeF9v3ovkp6qsZMkLZiwFR6o"
+                        alt="End of year ALUmni regional gatherings">
                     <h3>Succeed</h3>
                     <p>Access career resources, professional development opportunities, and job postings.</p>
                 </figure>
             </div>
+        </section>
+        <!-- Profile section with introduction and aim of the website -->
+        <section class="about-us w-100 p-3">
+            <h2 class="p-10 title">Meet Our Team</h2>
+            <p>Discover and reconnect with fellow alumni by utilizing our directory and participating in exciting
+                events.</br>
+
+                Join our End-of-Year Alumni Regional Gatherings and rekindle those connections.
+            <p class="mt-20">&nbsp;</p>
+            <div class="flex justify-between items-center p-10  wrap">
+                <div class="service five p-3 mt-auto circle-100 bg-none">
+                    <div class="img"><img
+                            src="https://images.squarespace-cdn.com/content/v1/5d24f1c29a964f0001ac1ac1/1562773688685-44HRDAYT3G8IK4OP9E9O/Connect.png"
+                            alt=""></div>
+                    <div class="text">
+                        <h3>Alumni Connect</h3>
+                        <small class="p-3">Find and connect with alumni Directly and events.</small>
+                    </div>
+                </div>
+                <div class="service five p-3 mt-auto circle-100 bg-none">
+                    <div class="img"><img
+                            src="https://constructionmarketingblog.org/wp-content/uploads/2023/09/How-Is-Collaboration-Different-From-Teamwork.jpg"
+                            alt=""></div>
+                    <div class="text">
+                        <h3>Regional Gatherings</h3>
+                        <small class="p-3">Attend end-of-year alumni events to network.</small>
+                    </div>
+                </div>
+                <div class="service five p-3 mt-auto circle-100 bg-none">
+                    <div class="img"><img
+                            src="https://t4.ftcdn.net/jpg/02/16/94/65/360_F_216946587_rmug8FCNgpDCPQlstiCJ0CAXJ2sqPRU7.jpg"
+                            alt=""></div>
+                    <div class="text">
+                        <h3>Events Updates</h3>
+                        <small class="p-3">Stay informed about campus news and Upcoming Events.</small>
+                    </div>
+                </div>
+                <div class="service five p-3 mt-auto circle-100 bg-none">
+                    <div class="img"><img
+                            src="https://play-lh.googleusercontent.com/8XCMNUY7CUq55fa4yRlgTVc2EcPQRT99nfxKRUjYhMoL5_IfZL8D_dcMMXbU9E76M6Vs"
+                            alt=""></div>
+                    <div class="text">
+                        <h3>Career Hub</h3>
+                        <small class="p-3">Resources, development opportunities, and jobs.</small>
+                    </div>
+                </div>
+                <div class="service five p-3 mt-auto ">
+                    <div class="img"><img
+                            src="https://play-lh.googleusercontent.com/8XCMNUY7CUq55fa4yRlgTVc2EcPQRT99nfxKRUjYhMoL5_IfZL8D_dcMMXbU9E76M6Vs"
+                            alt=""></div>
+                    <div class="text">
+                        <h3>Career Hub</h3>
+                        <small class="p-3">Resources, development opportunities, and jobs.</small>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <a href="about.html" target="_blank" class="link">Read More About Us <i class="fa fa-arrow-right"></i></a>
+            </center>
         </section>
     </main>
 
@@ -119,7 +300,8 @@
     <footer class="flex">
         <div class="logo">Logo</div>
         <div class="address">
-            <address><i class="fa fa-map-marker"></i> <strong>ALU Rwanda Campus</strong><br>Bumbogo, Kigali Innovation City,<br>Next to Azam,<br>Kigali, Rwanda</address>
+            <address><i class="fa fa-map-marker"></i> <strong>ALU Rwanda Campus</strong><br>Bumbogo, Kigali Innovation
+                City,<br>Next to Azam,<br>Kigali, Rwanda</address>
         </div>
         <div class="social-icons">
             <a href="#"><i class="fa fa-facebook-f"></i></a>
@@ -128,4 +310,5 @@
         </div>
     </footer>
 </body>
+
 </html>

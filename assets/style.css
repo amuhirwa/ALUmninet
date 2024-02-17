@@ -1,48 +1,63 @@
 /* Imported fonts from google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   padding: 0;
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
 }
+
 header {
   /* Header Container*/
   background: #317773;
   height: 100vh;
   position: relative;
 }
+
 strong {
   font-weight: bolder;
 }
+
 header #main-nav {
   /* For The Navigation Bar*/
   padding: 10px 20px;
   display: flex;
+  top: 0;
+  z-index: 10;
+  position: sticky;
   justify-content: space-between;
   align-items: center;
   background: rgba(0, 0, 0, 0.3);
 }
+
 header #main-nav h1 span {
   /* For The Heading Logo*/
   font-weight: 600;
   color: white;
   text-transform: uppercase;
 }
+
 header #main-nav h1 span:nth-child(1) {
   /* For The Heading Logo aLUMIN*/
   color: #e2d1f9;
 }
+
 header #main-nav h1 span:nth-child(2) {
   /* For The Heading Logo NET*/
   color: #c04cfd;
 }
+
 header #main-nav ul {
   display: flex;
   gap: 10px;
   padding: 10px;
   list-style: none;
 }
+
 header #main-nav ul .nav-items {
   padding: 12px;
   text-decoration: none;
@@ -51,11 +66,18 @@ header #main-nav ul .nav-items {
   text-shadow: 2px 2px 6px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
+
 header #main-nav ul .nav-items:hover {
   color: white;
   border-bottom: 2px solid #8fe0ec;
   transition: all 0.4s ease;
 }
+header #main-nav ul .nav-items.active {
+  color: white;
+  border-bottom: 2px solid #8fe0ec;
+  transition: all 0.4s ease;
+}
+
 header #main-nav ul .nav-list-items:hover {
   transform: scale(1.1);
   transition: all 0.4s ease-i;
@@ -70,26 +92,31 @@ header .img-container {
   overflow: hidden;
 }
 
-header .img-container img {
+header .img-container .icon-bg {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  z-index: 1; /* Ensure the image stays above the gradient overlay */
+  z-index: 1;
+  /* Ensure the image stays above the gradient overlay */
 }
 
-header .gradient-overlay {
+.gradient-overlay {
   /* for Gradient Overlay on image*/
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(29, 92, 89, 0.9),
-    rgba(6, 61, 57, 0.5)
-  );
-  z-index: 2; /* Ensure the gradient overlay stays above the image */
+  background: linear-gradient(to right,
+      rgba(29, 92, 89, 0.9),
+      rgba(6, 61, 57, 0.5));
+  z-index: 2;
+  /* Ensure the gradient overlay stays above the image */
+}
+.gradient-overlay.br-red{
+  background: linear-gradient(to right,
+  rgba(32, 119, 145, 0.9),
+  rgba(6, 50, 61, 0.5));
 }
 
 header .detail-container {
@@ -102,6 +129,7 @@ header .detail-container {
   overflow: hidden;
   font-family: "Poppins", sans-serif;
 }
+
 header .detail-container h2 {
   /* for Headerof image continer*/
   font-size: calc(1.5rem + 1vw);
@@ -109,6 +137,7 @@ header .detail-container h2 {
   padding: 30px;
   padding-bottom: 0px;
 }
+
 header .detail-container .small-text {
   /* for small text of image container*/
   padding: 30px;
@@ -116,15 +145,18 @@ header .detail-container .small-text {
   width: 100%;
   line-height: 25px;
 }
+
 header .detail-container .small-text .texts-md {
   font-weight: 100;
   font-size: 18px;
 }
+
 .container.main {
   /* for image and deatils container */
   overflow: hidden;
   margin-bottom: 50px;
 }
+
 #objectives {
   width: 100%;
   justify-content: space-between;
@@ -132,13 +164,16 @@ header .detail-container .small-text .texts-md {
   padding: 20px;
   color: lightblue;
 }
+
 .objective-cards {
   text-align: center;
 }
+
 .objective-images {
   width: 80%;
   border-radius: 20px;
 }
+
 footer {
   width: 100%;
   color: #fdf5a6;
@@ -148,98 +183,427 @@ footer {
   font-size: 1.2rem;
   align-items: center;
 }
+
 .address {
   margin-top: 60px;
 }
+
 .social-icons a i {
   font-size: 1.6rem;
   color: #fdf5a6;
   padding: 10px;
 }
-/* 
-== Main Styles
-*/
-.h-100 {
-  height: 100%;
-}
-.w-100 {
-  width: 100%;
-}
-.relative {
-  position: relative;
-}
-.absolute {
-  position: absolute;
-}
-.flex {
-  display: flex;
-}
-.justify-center {
-  justify-content: center;
-}
-.items-center {
-  align-items: center;
-}
-.gap-10 {
-  gap: 10px;
-}
-.gap-20 {
-  gap: 20px;
-}
-.wrap {
-  flex-wrap: wrap;
-}
-.p-10 {
-  padding: 10px;
-}
-/* 
-== End Main Styles
+
 /*
 main styles
 */
+.link{
+  text-decoration: none;
+  color: #2382ff;
+}
 main {
   width: 100%;
   color: #072c50;
   overflow: auto;
 }
+
 main .comming-events {
   width: 100%;
-  margin: 100px 0;
+  margin: 4px 0;
   padding: 12px;
   text-align: center;
   background: white;
 }
+
 main .comming-events h2 {
   padding: 12px;
 }
+
 main .comming-events .box {
   border-radius: 10px;
-  width: calc(25% - 20px); /* Adjust width as needed */
-  margin-bottom: 20px; /* Adjust spacing between items */
-  box-shadow: 2px 0px 5px 3px rgba(0, 0, 0, 0.1);
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+  box-shadow: 2px 0px 20px 2px rgba(0, 0, 0, 0.1);
   text-align: center;
+  height: fit-content;
   box-sizing: border-box;
 }
+main .comming-events .box:hover{
+  transform: scale(1.1);
+}
+
 main .comming-events .box .img {
   border-radius: 10px 10px 0px 0px;
+  transition: all 0.4s ease;
   width: 100%;
   overflow: hidden;
-  height: 80%;
+  height: 200px;
 }
+
 main .comming-events .box .img img {
+  transition: all 0.4s ease;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+
+
+main .comming-events .box .img img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+main .comming-events .box .text{
+  height: 46px;
+  padding: 10px;
+}
+.date{
+  font-weight: bold;
+}
+.about-us{
+  text-align: center;
+  margin: 100px auto 0;
+}
+/*---------our servce*/
+main .about-us .service {
+  border-radius: 10px;
+  width: calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 2px 0px 20px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.4s ease;
+  height: fit-content;
+  box-sizing: border-box;
+}
+main .about-us .service .img{
+  width: 100px;
+  transition: all 0.4s ease;
+  height: 100px;
+  background: #eef5fd;
+  overflow: hidden;
+  border-radius: 100px;
+  margin: 10px auto;
+}
+main .about-us .service:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+main .about-us .service .img:hover{
+  transform: rotate(10deg);
+}
+main .about-us .service .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main .about-us .service .img img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+main .about-us .service.five {
+  background: none;
+  box-shadow: 0px 0px 0px 0px;
+  width: calc(20% - 20px);
+
+}
+
+/* 
+============================================== Animations Styles
+*/
+.animal-zoom{
+  animation: title 2s ease;
+}
+@keyframes title {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+/* 
+============================================== Main Styles
+*/
+.btn{
+  padding: 12px;
+  border: 0px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.bg-green{
+  background: rgb(46, 163, 46);
+}
+.pointer{
+  cursor: pointer;
+}
+.bg-red{
+  background: rgb(240, 51, 51);
+}
+.bg-blue{
+  background: rgb(41, 87, 238);
+}
+
+.bg-green:hover{
+  background: rgb(62, 218, 62);
+}
+.pointer{
+  cursor: pointer;
+}
+.bg-red:hover{
+  background: rgb(236, 77, 77);
+}
+.bg-blue:hover{
+  background: rgb(53, 92, 218);
+}
+
+
+
+.h-100 {
+  height: 100%;
+}
+.circle-100{
+  border-radius: 100px;
+}
+.bg-none{
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  background: none;
+}
+.dec-none{
+  text-decoration: none;
+}
+.rounded-10{
+  border-radius: 10px;
+}
+.img-cover{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+.w-100 {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+}
+.m-auto{
+margin: auto;
+} 
+.w-90{
+  width: 80%;
+}
+.w-80{
+  width: 80%;
+}
+.w-70{
+  width: 70%;
+}
+.w-50{
+  width: 50%;
+}
+.z-1{
+  z-index: 1;
+} 
+.z-2{
+  z-index: 2;
+} 
+.z-3{
+  z-index: 3;
+} 
+.z-4{
+  z-index: 4;
+} 
+.top-0{
+  top: 0;
+} 
+.left-0{
+  left: 0;
+}
+.top-10{
+  top: 10px;
+} 
+.left-10{
+  left: 10px;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.items-stretch {
+  align-items: stretch;
+}
+.title{
+  width: fit-content;
+  margin: 10px auto;
+  border-bottom: 2px solid #072c50;
+}
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+.text-white{
+  color: white;
+}
+.text-red{
+  color: rgb(255, 51, 51);
+}
+.text-sm {
+  font-size: 0.875vw; /* Equivalent to 14px */
+}
+.text-center{
+  text-align: center;
+}
+.text-md {
+  font-size: 1vw; /* Equivalent to 16px (root font size) */
+}
+.mt-30{
+  margin-top: 30px;
+}
+.text-lg {
+  font-size: 1.25vw; /* Equivalent to 20px */
+}
+
+.text-xl {
+  font-size: 2.5vw; /* Equivalent to 24px */
+}
+
+.text-xls {
+  font-size: 2.75vw; /* Equivalent to 28px */
+}
+
+.text-xxl {
+  font-size: 3vw; /* Equivalent to 32px */
+}
+
+.text-xxxl {
+  font-size: 4.25vw; /* Equivalent to 36px */
+}
+
+.text-blue{
+  color: rgb(51, 88, 255);
+}
+.p-4 {
+  padding: 10px;
+}
+.mt-3{
+  margin-top: 3px;
+}
+.mt-6{
+  margin-top: 6px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mt-13{
+  margin-top: 13px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-auto{
+  margin: auto;
+}
+.p-3 {
+  padding: 10px;
+}
+.clip-text {
+  overflow: hidden; /* Hide any overflowing content */
+  text-overflow: ellipsis; /* Display ellipsis for truncated text */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit the number of lines */
+  -webkit-box-orient: vertical;
+  line-height: 1.4; /* Adjust line height as needed */
+}
+/* 
+== End Main Styles
+*/
+
+
+
+
 /* Media query for responsive layout */
+@media (max-width: 1208px) {
+  main .comming-events .box {
+    width: calc(50% - 20px);
+    /* Two columns on smaller screens */
+  }
+  main .about-us .service {
+    width: calc(50% - 20px);
+    /* Two columns on smaller screens */
+  }
+  main .comming-events .box .img {
+    height: 260px;
+  }
+  main .about-us .service.five {
+    width: calc(50% - 20px);
+  
+  }
+}
 @media (max-width: 768px) {
   main .comming-events .box {
-    width: calc(50% - 20px); /* Two columns on smaller screens */
+    width: calc(50% - 20px);
+    /* Two columns on smaller screens */
+  }
+  main .about-us .service {
+    width: calc(50% - 20px);
+    /* Two columns on smaller screens */
+  }
+  main .comming-events .box .img {
+    height: 200px;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 676px) {
   main .comming-events .box {
-    width: 100%; /* Single column on extra small screens */
+    width: 100%;
+    /* Single column on extra small screens */
+  }
+  main .comming-events .box .img {
+    height: 280px;
+  }
+  main .about-us .service {
+    width: 100%;
+    /* Single column on extra small screens */
+  }
+  main .about-us .service.five {
+    width: calc(80% - 20px);
+
+  
   }
 }
+
+
