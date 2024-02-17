@@ -118,6 +118,11 @@ header .img-container .icon-bg {
   rgba(32, 119, 145, 0.9),
   rgba(6, 50, 61, 0.5));
 }
+.gradient-overlay.br-footer{
+  background:url("https://images.pond5.com/transparent-waves-black-backround-abstract-footage-070405026_prevstill.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 header .detail-container {
   /* for Image Detail Container*/
@@ -157,42 +162,6 @@ header .detail-container .small-text .texts-md {
   margin-bottom: 50px;
 }
 
-#objectives {
-  width: 100%;
-  justify-content: space-between;
-  background-color: slateblue;
-  padding: 20px;
-  color: lightblue;
-}
-
-.objective-cards {
-  text-align: center;
-}
-
-.objective-images {
-  width: 80%;
-  border-radius: 20px;
-}
-
-footer {
-  width: 100%;
-  color: #fdf5a6;
-  justify-content: space-around;
-  background: #072c50;
-  line-height: 30px;
-  font-size: 1.2rem;
-  align-items: center;
-}
-
-.address {
-  margin-top: 60px;
-}
-
-.social-icons a i {
-  font-size: 1.6rem;
-  color: #fdf5a6;
-  padding: 10px;
-}
 
 /*
 main styles
@@ -311,7 +280,36 @@ main .about-us .service.five {
   width: calc(20% - 20px);
 
 }
+.footer{
+  margin: 30px auto 0;
+  color: white;
+}
+.footer .box {
+  line-height: 1.5;
+  border-radius: 10px;
+  width: calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all 0.4s ease;
+  height: fit-content;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
+.footer .box a{
+  width: 100%;
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  padding-left: 0;
+}
+.footer .box a:hover{
+  padding-left: 10px;
+}
 /* 
 ============================================== Animations Styles
 */
@@ -329,6 +327,7 @@ main .about-us .service.five {
 /* 
 ============================================== Main Styles
 */
+
 .btn{
   padding: 12px;
   border: 0px;
@@ -517,7 +516,7 @@ margin: auto;
   color: rgb(51, 88, 255);
 }
 .p-4 {
-  padding: 10px;
+  padding: 4;
 }
 .mt-3{
   margin-top: 3px;
@@ -538,7 +537,19 @@ margin: auto;
   margin: auto;
 }
 .p-3 {
+  padding: 3px;
+}
+.p-10 {
   padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.pl-0 {
+  padding-left: 0px;
+}
+.pt-0 {
+  padding-top: 0px;
 }
 .clip-text {
   overflow: hidden; /* Hide any overflowing content */
@@ -558,6 +569,10 @@ margin: auto;
 /* Media query for responsive layout */
 @media (max-width: 1208px) {
   main .comming-events .box {
+    width: calc(50% - 20px);
+    /* Two columns on smaller screens */
+  }
+  .footer .box {
     width: calc(50% - 20px);
     /* Two columns on smaller screens */
   }
@@ -589,6 +604,10 @@ margin: auto;
 
 @media (max-width: 676px) {
   main .comming-events .box {
+    width: 100%;
+    /* Single column on extra small screens */
+  }
+  .footer .box {
     width: 100%;
     /* Single column on extra small screens */
   }
