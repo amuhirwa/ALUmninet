@@ -6,23 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport settings for responsive design -->
     <meta name="description" content="AlumniNet is your official online hub for staying connected to your alma mater and fellow alumni."> <!-- Meta description -->
     <title>AlumniNet - Home</title> <!-- Sets the title of the document -->
-    <link rel="stylesheet" href="style.css"> <!-- Links to an external stylesheet -->
-<body>
+    <link rel="stylesheet" href="assets/style.css"> <!-- Links to an external stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Link to Font Awesome library -->
+    <body>
     <!-- Header section with logo and navigation -->
     <header>
-        <h1>AlumniNet</h1>
         <nav id="main-nav">
+            <h1><span>ALUmni</span><span> NET</span></h1>
             <ul>
-                <li><a class="nav-items" href="home.html">Home</a></li>
-                <li><a class="nav-items" href="events.html">Events</a></li>
-                <li><a class="nav-items" href="#about">About</a></li>
-                <li><a class="nav-items" href="#contact">Contact</a></li>
+                <li class="nav-list-items"><a class="nav-items" href="home.html">Home</a></li>
+                <li class="nav-list-items"><a class="nav-items" href="events.html">Events</a></li>
+                <li class="nav-list-items"><a class="nav-items" href="#about">About</a></li>
+                <li class="nav-list-items"><a class="nav-items" href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="container main relative h-100 w-100 flex items-center">
+            <article class="detail-container absolute">
+                <h2>Welcome to AlumniNet!</h2>
+                <div class="small-text">
+                    <p class="texts-md">Your official online hub for staying connected to your alma mater and fellow alumni.</p>
+                    <p class="texts-md">Our goal is to cultivate a lively and involved community by offering valuable resources, updates, and chances
+                     for both professional and personal development.</p>
+                </div>
+            </article>
+            <div class="img-container absolute ">
+                <div class="gradient-overlay"></div>
+                <img src="https://www.salesforce.org/wp-content/uploads/2019/06/Copy-of-DSC_7221.jpg" alt="Alumni gathering image">
+            </div>
+        </div>
+        
     </header>
 
     <!-- Main content of the page -->
     <main id="home">
+        <!----Simple Comming Events--->
+        <section class="comming-events">
+            <h2>Upcoming Events</h2>
+            <p>Upcoming events and activities in the ALU community.</p>
+            <div class="flex justify-between items-center gap-20 wrap p-10">
+                <div class="box">
+                    <div class="img">
+                        <img src="https://www.alueducation.com/wp-content/uploads/2024/02/SV-Youtube-Cover.png" alt="">
+                        <div class="text p-10">
+                            <h3>Pull Party</h3>
+                            <p>This Month At Lestho Cohort</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="https://www.alueducation.com/wp-content/uploads/2024/02/SV-Youtube-Cover.png" alt="">
+                        <div class="text p-10">
+                            <h3>Pull Party</h3>
+                            <p>This Month At Lestho Cohort</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="https://www.alueducation.com/wp-content/uploads/2024/02/SV-Youtube-Cover.png" alt="">
+                        <div class="text p-10">
+                            <h3>Pull Party</h3>
+                            <p>This Month At Lestho Cohort</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img">
+                        <img src="https://www.alueducation.com/wp-content/uploads/2024/02/SV-Youtube-Cover.png" alt="">
+                        <div class="text p-10">
+                            <h3>Pull Party</h3>
+                            <p>This Month At Lestho Cohort</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Article section with introduction and aim of the website -->
         <article>
             <h2>Welcome to AlumniNet!</h2>
@@ -36,7 +95,7 @@
                 <figcaption>ALU students celebrating graduation</figcaption>
             </figure>
             <!-- Cards with figures and objectives of the website -->
-            <div id="objectives">
+            <div id="objectives" class="flex">
                 <figure class="objective-cards">
                     <img class="objective-images" src="https://media.licdn.com/dms/image/D4D22AQHNxf4k3c320Q/feedshare-shrink_2048_1536/0/1700478924837?e=2147483647&v=beta&t=ZGhb6vknKn_dHoXLtt6eeF9v3ovkp6qsZMkLZiwFR6o" alt="End of year ALUmni regional gatherings">
                     <h3>Reconnect</h3>
@@ -57,8 +116,16 @@
     </main>
 
     <!-- Footer section with address and contact information -->
-    <footer>
-        <p>&copy; 2023 AlumniNet. All rights reserved.</p>
+    <footer class="flex">
+        <div class="logo">Logo</div>
+        <div class="address">
+            <address><i class="fa fa-map-marker"></i> <strong>ALU Rwanda Campus</strong><br>Bumbogo, Kigali Innovation City,<br>Next to Azam,<br>Kigali, Rwanda</address>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook-f"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
     </footer>
 </body>
 </html>
