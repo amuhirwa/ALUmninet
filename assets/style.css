@@ -698,6 +698,42 @@ header #main-nav #menu-icon {
   main .comming-events .box .img {
     height: 200px;
   }
+
+  header #main-nav #menu {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    right: 0;
+    animation: left-to-right 0.5s  ease-out;
+    top: 55px;
+    max-height: 300px;
+  }
+  @keyframes left-to-right {
+    
+    0%{
+      right: -100%;
+    }
+    100%{
+      right: 0;
+    }
+  }
+  header #main-nav #menu .nav-list-items{
+    width: 100%;
+    padding: 12px;
+  }
+
+  header #main-nav #menu-icon {
+    display: inline;
+  }
+  .btn.res{
+    font-size: 16px;
+  }
+
+/* Apply styles when the checkbox is checked */
+#menu-checkbox:checked + #main-nav #menu {
+  /* Your styles here */
+  display: block;
+}
 }
 
 @media (max-width: 676px) {
