@@ -17,14 +17,16 @@
 <body>
     <!-- Header section with logo and navigation -->
     <header>
+        <input type="checkbox" id="menu-checkbox" hidden>
         <nav id="main-nav">
             <h1 class="animal-zoom"><span>ALUmni</span><span> NET</span></h1>
-            <ul class="animal-zoom menu">
-                <li class="nav-list-items"><a class="nav-items active" href="home.html">Home</a></li>
+            <ul class="animal-zoom" id="menu">
+                <li class="nav-list-items"><a class="nav-items active" href="index.html">Home</a></li>
                 <li class="nav-list-items"><a class="nav-items" href="events.html">Events</a></li>
-                <li class="nav-list-items"><a class="nav-items" href="#about">About</a></li>
+                <li class="nav-list-items"><a class="nav-items" href="about.html">About</a></li>
                 <li class="nav-list-items"><a class="nav-items" href="#contact">Contact</a></li>
             </ul>
+            <label for="menu-checkbox" id="menu-icon"><i class="fa fa-bars text-white"></i></label>
         </nav>
         <div class="container main relative h-100 w-100 flex items-center ">
             <article class="detail-container absolute">
@@ -39,13 +41,13 @@
                         for both professional and personal development.</p>
                     <div class="flex gap-10">
 
-                        <button class="btn btn-home animal-zoom bg-green mt-20 pointer">
+                        <button class="btn res btn-home animal-zoom bg-green mt-20 pointer">
                             <a href="about.html" class="text-white dec-none">
                                 Contact US Now <i class="fa fa-arrow-right"></i>
                             </a>
                         </button>
 
-                        <button class="btn btn-home animal-zoom bg-red mt-20 pointer">
+                        <button class="btn res btn-home animal-zoom bg-red mt-20 pointer">
                             <a href="events.html" class="text-white dec-none">
                                 Comming Events <i class="fa fa-arrow-right"></i>
                             </a>
