@@ -362,6 +362,15 @@ header #main-nav #menu-icon {
   border-radius: 5px;
 }
 
+.lst-non{
+  list-style: none;
+}
+.f-12{
+font-size: 12px;
+}
+.block{
+  display: block;
+}
 .bg-green {
   background: rgb(46, 163, 46);
 }
@@ -427,7 +436,9 @@ header #main-nav #menu-icon {
 .w-100 {
   width: 100%;
 }
-
+.w-fit{
+  width: fit-content;
+}
 .relative {
   position: relative;
 }
@@ -443,7 +454,9 @@ header #main-nav #menu-icon {
 .m-auto {
   margin: auto;
 }
-
+.m-0{
+  margin: 0;
+}
 .w-90 {
   width: 80%;
 }
@@ -513,7 +526,25 @@ header #main-nav #menu-icon {
   margin: 10px auto;
   border-bottom: 2px solid #072c50;
 }
+.nav-cat{
+  background: #1b5c9e;
+  border-radius: 100px;
+  min-width: fit-content;
+}
+.nav-cat:hover{
+  background: #3388dd;
+}
+.nav-cat:focus{
+  background: #3388dd;
 
+}
+.nav-cat:active{
+  background: #3388dd;
+
+}
+.title.m-0{
+  margin: 0;
+}
 .gap-10 {
   gap: 10px;
 }
@@ -556,9 +587,7 @@ header #main-nav #menu-icon {
   /* Equivalent to 16px (root font size) */
 }
 
-.mt-30 {
-  margin-top: 30px;
-}
+
 
 .text-lg {
   font-size: 1.25vw;
@@ -612,11 +641,18 @@ header #main-nav #menu-icon {
 .mt-20 {
   margin-top: 20px;
 }
-
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
 .mt-auto {
   margin: auto;
 }
-
+.m-10-auto{
+  margin: 10px auto;
+}
 .p-3 {
   padding: 3px;
 }
@@ -636,8 +672,13 @@ header #main-nav #menu-icon {
 .pt-0 {
   padding-top: 0px;
 }
-
+.sub-title{
+color: red;
+text-align: left;
+padding: 10px;
+}
 .clip-text {
+
   overflow: hidden;
   /* Hide any overflowing content */
   text-overflow: ellipsis;
@@ -649,7 +690,10 @@ header #main-nav #menu-icon {
   line-height: 1.4;
   /* Adjust line height as needed */
 }
-
+.clip-text.h-auto{
+  margin: 5px auto;
+height: 40px;
+}
 /* 
 == End Main Styles
 */
