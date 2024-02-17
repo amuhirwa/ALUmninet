@@ -731,7 +731,6 @@ header #main-nav #menu-icon {
 
 /* Apply styles when the checkbox is checked */
 #menu-checkbox:checked + #main-nav #menu {
-  /* Your styles here */
   display: block;
 }
 }
@@ -798,7 +797,6 @@ header #main-nav #menu-icon {
 
 /* Apply styles when the checkbox is checked */
 #menu-checkbox:checked + #main-nav #menu {
-  /* Your styles here */
   display: block;
 }
 
