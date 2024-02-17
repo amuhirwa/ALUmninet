@@ -129,7 +129,7 @@ header .detail-container {
   width: clamp(100%, 100%, 100%);
   z-index: 3;
   margin-top: -150px;
-  width: calc(870px - 20px);
+
   color: white;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
@@ -622,6 +622,9 @@ margin: auto;
     width: calc(80% - 20px);
 
   
+  }
+  header .detail-container .small-text {
+    width: 100%;
   }
 }
 
