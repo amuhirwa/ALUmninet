@@ -276,7 +276,7 @@ main .comming-events .box .text {
 
 .team-member figure:hover img:first-child {
   width: 130px;
-  transition: all 0.6s ease;
+  transition: all 1s ease;
 }
 .scroll-down {
   color:gold;
