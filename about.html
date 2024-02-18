@@ -11,6 +11,7 @@
     <!-- Meta description -->
     <title>AlumniNet - Home</title> <!-- Sets the title of the document -->
     <link rel="stylesheet" href="assets/style.css"> <!-- Links to an external stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
     <!-- Header section with logo and navigation -->
@@ -28,11 +29,11 @@
         </nav>
         <div class="container main relative h-100 w-100 flex items-center ">
             <article class="detail-container absolute">
-                <h2 class="p-10 animal-zoom">Welcome to AlumniNet!</h2>
+                <h2 class="p-10 animal-zoom">About AlumniConnect!</h2>
                 <div class="small-text">
-                    <p class="texts-md animal-zoom">Your official online hub for staying connected to your alma mater
-                        and fellow
-                        alumni.</p>
+                    <p class="texts-md animal-zoom">AlumniConnect is your official online hub for staying connected to your alma mater, ALU, and fellow
+                        alumni. We are dedicated to fostering a vibrant and engaged community by providing valuable resources,
+                        news, and opportunities for professional and personal growth.</p>
                     <p class="texts-md animal-zoom">Our goal is to cultivate a lively and involved community by offering
                         valuable
                         resources, updates, and chances
@@ -47,12 +48,14 @@
 
                         <button class="btn res btn-home animal-zoom bg-red mt-20 pointer">
                             <a href="events.html" class="text-white dec-none">
-                                Comming Events <i class="fa fa-arrow-right"></i>
+                                Coming Events <i class="fa fa-arrow-right"></i>
                             </a>
                         </button>
                     </div>
                 </div>
             </article>
+            <span class="scroll-down">Scroll to see our members</span>
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
             <div class="img-container absolute ">
                 <div class="gradient-overlay"></div>
                 <video class="icon-bg" loop autoplay muted>
@@ -68,67 +71,56 @@
 
 
     <!-- Main content of the page -->
-    <main id="home">
-        <!-- Article section with information and aim of the website -->
-        <article class="about-us">
-            <h2>About AlumniConnect</h2>
-            <p>AlumniConnect is your official online hub for staying connected to your alma mater, ALU, and fellow
-                alumni. We are dedicated to fostering a vibrant and engaged community by providing valuable resources,
-                news, and opportunities for professional and personal growth.</p>
-            <p>Our platform empowers alumni to:</p>
-            <ul>
-                <li>Reconnect with former classmates, professors, and mentors.</li>
-                <li>Discover and attend exciting professional development events, workshops, and webinars.</li>
-                <li>Stay informed about campus news, alumni achievements, and upcoming events.</li>
-                <li>Engage in meaningful networking opportunities and career support.</li>
-                <li>Give back to the university and future generations of students.</li>
-            </ul>
-            <p class="motto">We believe that a strong alumni network is essential for the success of our university and
-                its graduates. AlumniConnect is our commitment to fostering lifelong connections and supporting your
-                journey beyond graduation.</p>
-        </article>
+    <main id="about-us">
         <section class="team">
-            <h2>Meet the Team</h2>
-            <div class="team-member">
-                <img src="team-member-1.jpg" alt="Team member 1 photo">
-                <h3>Loue Sauveur Christian</h3>
-                <h4>Title</h4>
-                <p>Brief bio summarizing experience and contributions.</p>
-                <p><strong>Expertise:** Web development (React, Node.js), Event management platform integration.</p>
-            </div>
-            <div class="team-member">
-                <img src="team-member-2.jpg" alt="Team member 2 photo">
-                <h3>Alain Michael Muhirwa</h3>
-                <h4>Title</h4>
-                <p>Brief bio summarizing experience and contributions.</p>
-                <p><strong>Expertise:** Content management systems (WordPress, Drupal), Community engagement strategies.
-                </p>
-            </div>
-            <div class="team-member">
-                <img src="team-member-3.jpg" alt="Team member 3 photo">
-                <h3>Patrick Nayituriki</h3>
-                <h4>Title</h4>
-                <p>Brief bio summarizing experience and contributions.</p>
-                <p><strong>Expertise:** Data security and privacy, User interface/user experience (UI/UX) design.</p>
-            </div>
-            <div class="team-member">
-                <img src="team-member-4.jpg" alt="Team member 4 photo">
-                <h3>Clarisse Tuyishimire</h3>
-                <h4>Title</h4>
-                <p>Brief bio summarizing experience and contributions.</p>
-                <p><strong>Expertise:** Social media marketing, Alumni relations and outreach.</p>
-            </div>
-            <div class="team-member">
-                <img src="team-member-5.jpg" alt="Team member 5 photo">
-                <h3>Dean Daryl Murenzi</h3>
-                <h4>Title</h4>
-                <p>Brief bio summarizing experience and contributions.</p>
-                <p><strong>Expertise:** Graphic design, Branding and communications.</p>
+            <h2 class="text-center">Meet the Team</h2>
+            <div class="flex gap-40 wrap justify-around">
+                <div class="team-member text-center">
+                    <figure>
+                        <img src="images/bl-hd-im-3.jpg" alt="Team member 1 photo">
+                        <img class="second" src="data:image/png;base64,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" alt="HTML">
+                    </figure>
+                    <h3>Loue Sauveur Christian</h3>
+                    <h4>Title</h4>
+                    <p>Brief bio summarizing experience and contributions.</p>
+                    <p>Expertise:** Web development (React, Node.js), Event management platform integration.</p>
+                </div>
+                <div class="team-member text-center">
+                    <figure>
+                        <img src="images/bl-hd-im-3.jpg" alt="Team member 2 photo">
+                        <img src="data:image/png;base64,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" alt="CSS">
+                    </figure>
+                    <h3>Alain Michael Muhirwa</h3>
+                    <h4>Title</h4>
+                    <p>Brief bio summarizing experience and contributions.</p>
+                    <p>Expertise:** Content management systems (WordPress, Drupal), Community engagement strategies.
+                    </p>
+                </div>
+                <div class="team-member text-center">
+                    <img src="images/bl-hd-im-3.jpg" alt="Team member 3 photo">
+                    <h3>Patrick Nayituriki</h3>
+                    <h4>Title</h4>
+                    <p>Brief bio summarizing experience and contributions.</p>
+                    <p>Expertise:** Data security and privacy, User interface/user experience (UI/UX) design.</p>
+                </div>
+                <div class="team-member text-center">
+                    <img src="images/bl-hd-im-3.jpg" alt="Team member 4 photo">
+                    <h3>Clarisse Tuyishimire</h3>
+                    <h4>Title</h4>
+                    <p>Brief bio summarizing experience and contributions.</p>
+                    <p>Expertise:** Social media marketing, Alumni relations and outreach.</p>
+                </div>
+                <div class="team-member text-center">
+                    <img src="team-member-5.jpg" alt="Team member 5 photo">
+                    <h3>Dean Daryl Murenzi</h3>
+                    <h4>Title</h4>
+                    <p>Brief bio summarizing experience and contributions.</p>
+                    <p>Expertise:** Graphic design, Branding and communications.</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer section with address and contact information -->
     <!-- Footer section with address and contact information -->
     <footer class="footer flex  justify-between gap-20 p-20  wrap relative w-100 ">
         <div class="gradient-overlay br-footer"></div>
@@ -148,7 +140,7 @@
         </div>
         <div class="box z-2">
             <div>
-                <h3 align="left">Website Links</h3>
+                <h3>Website Links</h3>
                 <a class="dec-none" href="index.html">Home</a>
                 <a class="dec-none" href="about.html">About us</a>
                 <a class="dec-none" href="events.html">Events</a>
