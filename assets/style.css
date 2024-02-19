@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.4s ease;
-
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -383,7 +382,6 @@ main .about-us .service.five {
 }
 main .about-us .service.three {
   background: grey;
-  
   border-radius: 100px 0px 100px 0px;
   width: calc(30% - 20px);
 
@@ -427,7 +425,103 @@ header #main-nav #menu-icon {
   font-size: 29px;
   cursor: pointer;
 }
+#contact-us{
+  margin-top:100px;
+  background:white;
+}
+.contact-us-article{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us-title{
+  padding-bottom: 2rem;
+  font-size: xx-large;
 
+}
+.contact-us-details{
+width: 90%;
+text-align: center;
+padding-top:30px;
+line-height: 30px;
+}
+
+.form-section{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 2rem;
+  padding-right:2rem;
+  width:100%;
+}
+.form-section div{
+  width: 50%;
+}
+.input-tag{
+  border-radius:1px;
+  border-color: grey;
+  border: 1px;;
+  padding:10px;
+  margin-top:5px;
+  width: 100%;
+  min-width: 100%;
+  max-width:100%
+}
+.contact-form{
+  background-color: #eef5fd;
+  padding:40px;
+}
+.send-message{
+  margin-top:10px;
+  width: 20%;
+  padding-top:5px;
+  padding-bottom:5px;
+  background-color:#002E6D;
+  color:white;
+  border-radius:2px;
+  cursor: pointer;
+}
+
+.form-title{
+  margin-bottom:10px;
+}
+.form-description{
+  margin-bottom: 5px;
+}
+
+.faq{
+  background-color: #eef5fd;
+  margin-top:60px;
+  padding-top:20px;
+  padding-left:100px;
+  padding-right:100px;
+}
+.faq-title{
+  text-align: center;
+  color: black;
+  margin-bottom:20px;
+  font-size: xx-large;
+}
+
+.faq-questions{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.faq-single-question{
+  padding:5px;
+  margin-bottom:2px;
+  cursor: pointer;
+}
+.faq-single-answer{
+  padding-left:5px;
+  font-style:italic;
+  color:gray;
+  display: none;
+}
+.faq-single-question:hover{
+  font-weight: bold;
+}
 /* 
 ============================================== Animations Styles
 */
