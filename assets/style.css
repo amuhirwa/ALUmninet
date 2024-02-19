@@ -17,7 +17,7 @@ html {
 
 header {
   /* Header Container*/
-  background: #317773;
+  background: rgba(32, 119, 145, 0.9);
   height: 100vh;
   position: relative;
 }
@@ -35,7 +35,8 @@ header #main-nav {
   position: sticky;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.5); */
+  background: #002E6D;
 }
 
 header #main-nav h1 span {
@@ -52,7 +53,7 @@ header #main-nav h1 span:nth-child(1) {
 
 header #main-nav h1 span:nth-child(2) {
   /* For The Heading Logo NET*/
-  color: #c04cfd;
+  color: #D00D2D;
 }
 
 header #main-nav ul {
@@ -73,13 +74,13 @@ header #main-nav ul .nav-items {
 
 header #main-nav ul .nav-items:hover {
   color: white;
-  border-bottom: 2px solid #8fe0ec;
+  border-bottom: 2px solid #D00D2D;
   transition: all 0.4s ease;
 }
 
 header #main-nav ul .nav-items.active {
   color: white;
-  border-bottom: 2px solid #8fe0ec;
+  border-bottom: 2px solid #D00D2D;
   transition: all 0.4s ease;
 }
 
@@ -114,7 +115,7 @@ header .img-container .icon-bg {
   height: 100%;
   background: linear-gradient(
     to right,
-    rgba(29, 92, 89, 0.9),
+    rgba(29, 92, 89, 0.2),
     rgba(6, 61, 57, 0.5)
   );
   z-index: 2;
@@ -130,7 +131,7 @@ header .img-container .icon-bg {
 }
 
 .gradient-overlay.br-footer {
-  background: url("https://images.pond5.com/transparent-waves-black-backround-abstract-footage-070405026_prevstill.jpeg");
+  background: black;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -158,13 +159,16 @@ header .detail-container .small-text {
   /* for small text of image container*/
   padding: 30px;
   padding-bottom: 0px;
-  width: 100%;
+  width: 65%;
   line-height: 25px;
 }
 
 header .detail-container .small-text .texts-md {
   font-weight: 100;
   font-size: 18px;
+}
+header .detail-container .small-text .texts-md.main {
+  font-weight: 300;
 }
 
 .container.main {
@@ -399,7 +403,7 @@ main .about-us .service.five {
   display: block;
   color: white;
   text-align: left;
-  padding: 10px;
+  padding: 1px;
   padding-left: 0;
 }
 
@@ -459,7 +463,7 @@ header #main-nav #menu-icon {
 }
 
 .bg-red {
-  background: rgb(240, 51, 51);
+  background: #D00D2D;
 }
 
 .bg-blue {
@@ -526,7 +530,24 @@ header #main-nav #menu-icon {
 .flex {
   display: flex;
 }
-
+.font-bold{
+  font-weight: bold;
+}
+.font-bold-200{
+  font-weight: 200;
+}
+.font-bold-300{
+  font-weight: 300;
+}
+.font-bold-500{
+  font-weight: 500;
+}
+.font-bold-700{
+  font-weight: 700;
+}
+.font-bold-900{
+  font-weight: 900;
+}
 .m-auto {
   margin: auto;
 }
@@ -604,7 +625,7 @@ header #main-nav #menu-icon {
 .title {
   width: fit-content;
   margin: 10px auto;
-  border-bottom: 2px solid #072c50;
+  border-bottom: 2px solid #D00D2D;
 }
 .nav-cat {
   background: #1b5c9e;
