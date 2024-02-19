@@ -381,14 +381,6 @@ main .about-us .service.five {
   width: calc(20% - 20px);
 }
 
-main .about-us .about-mine {
-  border-radius: 60px 0px 60px 0px;
-  width: calc(20% - 20px);
-  overflow: hidden;
-  height: 300px;
-  padding: 0;
-}
-
 main .about-us .about-mine .img2 {
   width: 100%;
   height: 100%;
@@ -401,13 +393,79 @@ main .about-us .about-mine .img2 {
   left: 10px;
 }
 
-.about-mine:hover {
-  height: 0;
-  width: 0;
-}
 /* start */
 
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
 
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+.card {
+  width: 400px;
+}
+
+.card__content {
+  position: relative;
+  padding: 15em 5em;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card__content {
+  transform: rotateY(0.5turn);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.card__front {
+  background-image: url(https://constructionmarketingblog.org/wp-content/uploads/2023/09/How-Is-Collaboration-Different-From-Teamwork.jpg);
+  background-size: cover;
+  background-color: #00000088;
+  background-blend-mode: overlay;
+  font-weight: bold;
+  color: lightcyan;
+  border-radius: 60px 0px 60px 0px;
+}
+.card__title {
+  font-size: 2rem;
+  transform: var(--level-three);
+  margin-top: 200px;
+}
+
+.card__subtitle {
+  transform: var(--level-two);
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+  font-weight: var(--fw-bold);
+}
+
+.card__body {
+  transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-top: 200px;
+}
+
+.card__back {
+  transform: rotateY(0.5turn);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/fair.jpg);
+  color: violet;
+  border-radius: 60px 0px 60px 0px;
+}
 
 /* stop */
 .team-member-text {
@@ -1024,3 +1082,4 @@ header #main-nav #menu-icon {
     display: block;
   }
 }
+
