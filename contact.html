@@ -1,0 +1,115 @@
+<!-- HTML for Landing page for AlumniNet a website for ALU alumni events -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the viewport settings for responsive design -->
+    <meta name="description"
+        content="AlumniNet is your official online hub for staying connected to your alma mater and fellow alumni.">
+    <!-- Meta description -->
+    <title>AlumniNet - Home</title> <!-- Sets the title of the document -->
+    <link rel="stylesheet" href="assets/style.css"> <!-- Links to an external stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <!-- Header section with logo and navigation -->
+    <header>
+        <input type="checkbox" id="menu-checkbox" hidden>
+        <nav id="main-nav">
+            <h1 class="animal-zoom"><span>ALUmni</span><span> NET</span></h1>
+            <ul class="animal-zoom" id="menu">
+                <li class="nav-list-items"><a class="nav-items " href="index.html">Home</a></li>
+                <li class="nav-list-items"><a class="nav-items" href="events.html">Events</a></li>
+                <li class="nav-list-items"><a class="nav-items active" href="about.html">About</a></li>
+                <li class="nav-list-items"><a class="nav-items" href="#contact">Contact</a></li>
+            </ul>
+            <label for="menu-checkbox" id="menu-icon"><i class="fa fa-bars text-white"></i></label>
+        </nav>
+        <div class="container main relative h-100 w-100 flex items-center ">
+            <article class="detail-container absolute">
+                <h2 class="p-10 animal-zoom">About AlumniConnect!</h2>
+                <div class="small-text">
+                    <p class="texts-md animal-zoom">AlumniConnect is your official online hub for staying connected to your alma mater, ALU, and fellow
+                        alumni. We are dedicated to fostering a vibrant and engaged community by providing valuable resources,
+                        news, and opportunities for professional and personal growth.</p>
+                    <p class="texts-md animal-zoom">Our goal is to cultivate a lively and involved community by offering
+                        valuable
+                        resources, updates, and chances
+                        for both professional and personal development.</p>
+                    <div class="flex gap-10">
+
+                        <button class="btn res btn-home animal-zoom bg-green mt-20 pointer">
+                            <a href="about.html" class="text-white dec-none">
+                                Contact US Now <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </button>
+
+                        <button class="btn res btn-home animal-zoom bg-red mt-20 pointer">
+                            <a href="events.html" class="text-white dec-none">
+                                Coming Events <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <span class="scroll-down">Scroll to meet our members</span>
+            <a href="#about-us"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+            <div class="img-container absolute ">
+                <div class="gradient-overlay"></div>
+                <video class="icon-bg" loop autoplay muted>
+                    <source src="./video/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <!-- Main content of the page -->
+    <main id="about-us">
+        <form action=""></form>
+    </main>
+
+    <!-- Footer section with address and contact information -->
+    <footer class="footer flex  justify-between gap-20 p-20  wrap relative w-100 ">
+        <div class="gradient-overlay br-footer"></div>
+
+        <div class="box z-2">
+            <h2 class="p-10 title pt-0">
+                Logo
+            </h2>
+            <span>ALU Rwanda Trends</span>
+        </div>
+        <div class="box z-2">
+            <address>
+                <i class="fa fa-map-marker"></i> <strong>ALU Rwanda Campus</strong>
+                <br>Bumbogo, Kigali Innovation
+                City,<br>Next to Azam,<br>Kigali, Rwanda
+            </address>
+        </div>
+        <div class="box z-2">
+            <div>
+                <h3>Website Links</h3>
+                <a class="dec-none" href="index.html">Home</a>
+                <a class="dec-none" href="about.html">About us</a>
+                <a class="dec-none" href="events.html">Events</a>
+                <a class="dec-none" href="events.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="box z-2">
+            <h3>Social Medias</h3>
+            <div class="flex gap-10">
+                <a class="dec-none" href="#"><i class="fa fa-facebook-f"></i></a>
+                <a class="dec-none" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="dec-none" href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

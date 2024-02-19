@@ -16,7 +16,7 @@
 
 <body>
     <!-- Header section with logo and navigation -->
-    <header>
+    <header style="height: fit-content;">
         <input type="checkbox" id="menu-checkbox" hidden>
         <nav id="main-nav">
             <h1 class="animal-zoom"><span>ALUmni</span><span> NET</span></h1>
@@ -28,53 +28,21 @@
             </ul>
             <label for="menu-checkbox" id="menu-icon"><i class="fa fa-bars text-white"></i></label>
         </nav>
-        <div class="container main relative h-100 w-100 flex items-center ">
-            <article class="detail-container absolute">
-                <h2 class="p-10 animal-zoom">AlumniNet Events</h2>
-                <div class="small-text">
-                    <p class="texts-md main animal-zoom">Your official online hub for staying connected to your alma mater
-                        and fellow
-                        alumni.</p>
-                    <p class="texts-md main animal-zoom">Our goal is to cultivate a lively and involved community by offering
-                        valuable
-                        resources, updates, and chances
-                        for both professional and personal development.</p>
-                    <div class="flex gap-10">
 
-                        <button class="btn text-white animal-zoom bg-red mt-20 pointer">
-                            <a href="events.html#camp" class="text-white dec-none">
-                                Campus Events <i class="fa fa-arrow-right"></i>
-                            </a>
-                        </button>
-                    </div>
-                </div>
-            </article>
-            <div class="img-container absolute ">
-                <div class="gradient-overlay"></div>
-                <video class="icon-bg" loop autoplay muted>
-                    <source src="./video/video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-
-            </div>
-        </div>
 
     </header>
 
 
 
     <!-- Main content of the page -->
-    <main id="events " class="mt-30">
-        <h2 class="title p-20 mt-40">Upcoming Events</h2>
-        <div class="flex w-fit m-auto gap-10">
-            <a href="#pro" class="bg-red nav-cat text-white p-10 dec-none pointer">Students</a>
-            <a href="#pro" class="bg-red nav-cat text-white p-10 dec-none pointer">Professional</a>
-            <a href="#camp" class="bg-red nav-cat text-white p-10 dec-none pointer">Campus</a>
-            <a href="#pro" class="bg-red nav-cat text-white p-10 dec-none pointer">Live</a>
-        </div>
-        <!-- Professional Development events section -->
+    <main id="events " >
+        <h3 class="p-10 title f-40">Upcoming Events</h3>
+        <div style="position:sticky ; top: 0;" class="flex p-10 w-100 m-auto gap-10 items-center justify-between">
+            <h3  class="align-left flex  m-0 title p-20" >Professional Development </h3>
+                    <a href="#camp" class="bg-red nav-cat text-white p-10 dec-none pointer">Campus</a>
+                </div>
         <div class="comming-events w-90  mt-30" id="pro">
-            <h3 class="align-left m-0 title p-20" >Professional Development</h3>
+
             <!-- List of professional development events -->
             <ul class="flex justify-between items-center gap-10 wrap p-10 mt-20 lst-non">
                 <!-- Event details -->
@@ -264,7 +232,10 @@
         </div>
         <!-- Campus Events section -->
         <div class="comming-events w-90" id="camp">
-            <h3 class="title m-0 p-10">Campus Events</h3>
+            <div style="position:sticky ; top: 0;" class="flex p-10 w-100 m-auto gap-10 items-center justify-between">
+                <h3  class="align-left flex  m-0 title p-20" >Campus Events </h3>
+                        <a href="#pro" class="bg-red nav-cat text-white p-10 dec-none pointer">Professional</a>
+                    </div>
             <!-- List of campus events -->
             <ul class="flex justify-between items-center gap-10 wrap p-10 mt-20">
                 <!-- Event details -->
@@ -466,7 +437,7 @@
         </div>
         <div class="box z-2">
             <div>
-                <h3 align="left">Website Links</h3>
+                <h3 class="title" align="left">Website Links</h3>
                 <a class="dec-none" href="index.html">Home</a>
                 <a class="dec-none" href="about.html">About us</a>
                 <a class="dec-none" href="events.html">Events</a>
@@ -474,7 +445,7 @@
             </div>
         </div>
         <div class="box z-2">
-            <h3>Social Medias</h3>
+            <h3 class="title">Social Medias</h3>
             <div class="flex gap-10">
                 <a class="dec-none" href="#"><i class="fa fa-facebook-f"></i></a>
                 <a class="dec-none" href="#"><i class="fa fa-twitter"></i></a>
