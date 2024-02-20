@@ -319,12 +319,12 @@ main .comming-events .box .text {
 }
 
 .card__front {
-  background-image: url(https://constructionmarketingblog.org/wp-content/uploads/2023/09/How-Is-Collaboration-Different-From-Teamwork.jpg);
-  background-size: cover;
   background-color: #00000088;
   background-blend-mode: overlay;
   font-weight: bold;
-  color: lightcyan;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: lightcoral;
   border-radius: 6px;
 }
 .card__title {
@@ -640,7 +640,9 @@ textarea {
   font-size: 16px;
   border-radius: 5px;
 }
-
+.text-blue {
+  color: rgb(51, 88, 255);
+}
 .lst-non {
   list-style: none;
 }
@@ -715,11 +717,7 @@ textarea {
   border-radius: 10px;
 }
 
-.img-cover {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
+
 
 .w-100 {
   width: 100%;
@@ -1024,6 +1022,11 @@ textarea {
 }
 .magic-round {
   border-radius: 100px 0px 0px 100px;
+}
+.img-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 /* 
 == End Main Styles
