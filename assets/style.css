@@ -254,7 +254,6 @@ main .comming-events .box .text {
   margin-bottom: 10px;
 }
 
-
 .sticky {
   position: sticky;
   top: 0;
@@ -292,9 +291,9 @@ main .comming-events .box .text {
 }
 
 .card {
- height: 300px;
- width: 200px;
- overflow: hidden;
+  height: 300px;
+  width: 200px;
+  overflow: hidden;
 }
 
 .card__content {
@@ -450,10 +449,9 @@ main .about-us .service.five {
 }
 main .about-us .service.three {
   background: grey;
-  
+
   border-radius: 100px 0px 100px 0px;
   width: calc(30% - 20px);
-
 }
 
 .footer {
@@ -600,20 +598,20 @@ textarea {
 .faq-single-answer {
   padding-left: 5px;
   padding-right: 5px;
-  margin-bottom: 10px;
   width: 50%;
   font-style: italic;
   color: gray;
   font-weight: 300;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
 }
 .faq-single-question:hover {
   font-weight: 500;
   font-size: large;
 }
-.faq-single-question:hover ~ .faq-single-answer {
-  display: block;
-  transition: all 0.4s ease;
+.faq-div:hover > .faq-single-answer {
+  max-height: 1000px;
+  transition: all 1s ease;
 }
 /* 
 ============================================== Animations Styles
@@ -1055,7 +1053,6 @@ textarea {
   main .about-us .service.five {
     width: calc(50% - 20px);
   }
-
 }
 
 @media (max-width: 768px) {
@@ -1142,7 +1139,6 @@ textarea {
     width: calc(80% - 20px);
   }
 
-
   header .detail-container .small-text {
     width: 100%;
   }
@@ -1187,4 +1183,3 @@ textarea {
     font-size: large;
   }
 }
-
