@@ -381,8 +381,10 @@ main .about-us .service.five {
 }
 main .about-us .service.three {
   background: grey;
+  
   border-radius: 100px 0px 100px 0px;
   width: calc(30% - 20px);
+
 }
 
 .footer {
@@ -984,7 +986,7 @@ textarea {
   main .about-us .service.five {
     width: calc(50% - 20px);
   }
-  main .about-us .service.three {
+  main .about-us .about-mine {
     width: calc(50% - 20px);
   }
 }
@@ -1068,7 +1070,7 @@ textarea {
   main .about-us .service.five {
     width: calc(80% - 20px);
   }
-  main .about-us .service.three {
+  main .about-us .about-mine {
     width: calc(80% - 20px);
   }
 
@@ -1116,3 +1118,4 @@ textarea {
     font-size: large;
   }
 }
+
