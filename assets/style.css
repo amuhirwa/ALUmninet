@@ -431,17 +431,18 @@ header #main-nav #menu-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 .contact-us-title {
   padding-bottom: 2rem;
   font-size: xx-large;
+  text-align: center;
 }
 .contact-us-details {
   width: 90%;
   text-align: center;
-  padding-top: 30px;
   line-height: 30px;
+  padding-top: 2rem;
 }
 
 .form-section {
@@ -449,6 +450,7 @@ header #main-nav #menu-icon {
   justify-content: space-around;
   padding-left: 2rem;
   padding-right: 2rem;
+  gap: 1rem;
   width: 100%;
 }
 .form-section div {
@@ -466,6 +468,18 @@ header #main-nav #menu-icon {
   min-height: 30px;
   max-height: 100px;
   height: 50px;
+  outline: none;
+}
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 100px;
+  height: 50px;
+  outline: none;
+  border: 0;
+  margin-top: 5px;
+  padding: 10px;
 }
 .contact-form {
   background-color: #eef5fd;
@@ -473,7 +487,7 @@ header #main-nav #menu-icon {
 }
 .send-message {
   margin-top: 10px;
-  width: 20%;
+  min-width: 20%;
   padding-top: 8px;
   padding-bottom: 8px;
   background-color: #002e6d;
@@ -501,7 +515,6 @@ header #main-nav #menu-icon {
   text-align: center;
   color: black;
   margin-bottom: 20px;
-  font-size: xx-large;
 }
 
 .faq-questions {
@@ -510,7 +523,7 @@ header #main-nav #menu-icon {
 }
 .faq-single-question {
   padding: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 .faq-single-answer {
@@ -1024,6 +1037,12 @@ header #main-nav #menu-icon {
   #menu-checkbox:checked + #main-nav #menu {
     display: block;
   }
+  .form-section {
+    flex-direction: column;
+  }
+  .form-section div {
+    width: 100%;
+  }
 }
 
 @media (max-width: 676px) {
@@ -1089,5 +1108,11 @@ header #main-nav #menu-icon {
   /* Apply styles when the checkbox is checked */
   #menu-checkbox:checked + #main-nav #menu {
     display: block;
+  }
+  .form-section {
+    flex-direction: column;
+  }
+  .faq-title {
+    font-size: large;
   }
 }
