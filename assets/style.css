@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.4s ease;
-
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -380,109 +379,14 @@ main .about-us .service.five {
   box-shadow: 0px 0px 0px 0px;
   width: calc(20% - 20px);
 }
+main .about-us .service.three {
+  background: grey;
+  
+  border-radius: 100px 0px 100px 0px;
+  width: calc(30% - 20px);
 
-main .about-us .about-mine .img2 {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
-.about-mine span {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-
-/* start */
-
-:root {
-  --level-one: translateZ(3rem);
-  --level-two: translateZ(6rem);
-  --level-three: translateZ(9rem);
-
-  --fw-normal: 400;
-  --fw-bold: 700;
-}
-
-.card {
-  width: 400px;
-}
-
-.card__content {
-  position: relative;
-  padding: 15em 5em;
-  transition: transform 3s;
-  transform-style: preserve-3d;
-}
-
-.card:hover .card__content {
-  transform: rotateY(0.5turn);
-}
-
-.card__front,
-.card__back {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-}
-
-.card__front {
-  background-image: url(https://constructionmarketingblog.org/wp-content/uploads/2023/09/How-Is-Collaboration-Different-From-Teamwork.jpg);
-  background-size: cover;
-  background-color: #00000088;
-  background-blend-mode: overlay;
-  font-weight: bold;
-  color: lightcyan;
-  border-radius: 60px 0px 60px 0px;
-}
-.card__title {
-  font-size: 2rem;
-  transform: var(--level-three);
-  margin-top: 200px;
-}
-
-.card__subtitle {
-  transform: var(--level-two);
-  letter-spacing: 4px;
-  font-size: 0.75rem;
-  font-weight: var(--fw-bold);
-}
-
-.card__body {
-  transform: var(--level-two);
-  font-weight: var(fw-normal);
-  font-size: 1.5rem;
-  line-height: 1.6;
-  margin-top: 200px;
-}
-
-.card__back {
-  transform: rotateY(0.5turn);
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/fair.jpg);
-  color: violet;
-  border-radius: 60px 0px 60px 0px;
-}
-
-/* stop */
-.team-member-text {
-  height: 100%;
-  width: 100%;
-  background-color: #002d6d44;
-  text-align: left;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-main .about-us .about-mine .img2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .footer {
   margin: 30px auto 0;
   color: white;
@@ -521,7 +425,127 @@ header #main-nav #menu-icon {
   font-size: 29px;
   cursor: pointer;
 }
+#contact-us {
+  margin-top: 100px;
+  background: white;
+}
+.contact-us-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.contact-us-title {
+  padding-bottom: 2rem;
+  font-size: xx-large;
+  text-align: center;
+}
+.contact-us-details {
+  width: 90%;
+  text-align: center;
+  line-height: 30px;
+  padding-top: 2rem;
+}
 
+.form-section {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 1rem;
+  width: 100%;
+}
+.form-section div {
+  width: 50%;
+}
+.input-tag {
+  border-radius: 1px;
+  border-color: grey;
+  border: 1px;
+  padding: 10px;
+  margin-top: 5px;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 30px;
+  max-height: 100px;
+  height: 50px;
+  outline: none;
+}
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 100px;
+  height: 50px;
+  outline: none;
+  border: 0;
+  margin-top: 5px;
+  padding: 10px;
+}
+.contact-form {
+  background-color: #eef5fd;
+  padding: 40px;
+}
+.send-message {
+  margin-top: 10px;
+  min-width: 20%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #002e6d;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 0;
+}
+
+.form-title {
+  margin-bottom: 10px;
+}
+.form-description {
+  margin-bottom: 5px;
+}
+
+.faq {
+  background-color: #eef5fd;
+  margin-top: 60px;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.faq-title {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.faq-questions {
+  display: flex;
+  flex-direction: column;
+}
+.faq-single-question {
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.faq-single-answer {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+  width: 50%;
+  font-style: italic;
+  color: gray;
+  font-weight: 300;
+  display: none;
+}
+.faq-single-question:hover {
+  font-weight: 500;
+  font-size: large;
+}
+.faq-single-question:hover ~ .faq-single-answer {
+  display: block;
+  transition: all 0.4s ease;
+}
 /* 
 ============================================== Animations Styles
 */
@@ -1015,6 +1039,12 @@ header #main-nav #menu-icon {
   #menu-checkbox:checked + #main-nav #menu {
     display: block;
   }
+  .form-section {
+    flex-direction: column;
+  }
+  .form-section div {
+    width: 100%;
+  }
 }
 
 @media (max-width: 676px) {
@@ -1080,6 +1110,12 @@ header #main-nav #menu-icon {
   /* Apply styles when the checkbox is checked */
   #menu-checkbox:checked + #main-nav #menu {
     display: block;
+  }
+  .form-section {
+    flex-direction: column;
+  }
+  .faq-title {
+    font-size: large;
   }
 }
 
